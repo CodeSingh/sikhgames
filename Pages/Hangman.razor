@@ -1,0 +1,66 @@
+@page "/hangman"
+@inject HttpClient Http
+
+<h1>Hangman</h1>
+
+<p>Can you guess the Sikhi related thing, place or person</p>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in forecasts)
+            {
+                <tr>
+                    <td>@forecast.Date.ToShortDateString()</td>
+                    <td>@forecast.TemperatureC</td>
+                    <td>@forecast.TemperatureF</td>
+                    <td>@forecast.Summary</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private HangmanData hangman;
+
+    public class Question
+    {
+        public string Answer { get; set; }
+
+        public string[] Tags { get; set; }
+
+        public string[] Clues { get; set; }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        hangman = await Http.GetFromJsonAsync<HangmanData>("sample-data/hangman.json");
+    }
+
+    public class HangmanData
+    {
+        public string[] Consonants { get; set; }
+
+        public string[] Vowels { get; set; }
+
+        public string Summary { get; set; }
+
+        public Question[] Questions {get;set;}
+    }
+
+
+}

@@ -1,0 +1,16 @@
+﻿{
+  "consonants": "ੳਅੲਸਹਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵੜ",
+  "vowels": "ਾ,ਿ,ੀ,ੁ,ੂ,ੇ,ੈ,ੋ,ੌ,ੰ,ਂ,ੱ.",
+  "questions":[
+  {
+    "answer": "ੳਅੲਸ",
+    "tags": ["place", "historical"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਹਕਖਗਘ",
+    "tags": ["place", "historical"],
+    "clues": ["Test 1"]
+  }
+]
+}
