@@ -361,8 +361,12 @@ C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\sikhgame.dll
 C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\sikhgame.pdb
 C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\blazor\serviceworkers\wwwroot\service-worker.js
 C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\blazor\service-worker-assets.js
-C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\NbmnMZjXoVHSjwhcoTvOioGEmQIWYPeVxK0aEe5I6FI=.hash
-C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\WdOn0WGQwXGXo6wBzOuUQxH2h8Wkxhf_F-SZnPpT8Mw=.hash
-C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\18bFnjIurJIi6hDpTFk5GLf3klyZIla4q6a0vwZqJ6Q=.hash
-C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\3J3Xysuk5YTzLU6b_-_VPpUVkuu8IG-6AE_VwJud7j4=.hash
-C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\xmU_6jPvfifdoItvA_RmKFp2WhGkAa2kD6Nt5iayJWA=.hash
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Hangman.razor.g.cs
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\RazorDeclaration\Shared\Letter.razor.g.cs
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\Razor\Pages\Hangman.razor.g.cs
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\Razor\Shared\Letter.razor.g.cs
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\72HhoyDTab2k9-FOJofH-jxfLR0zjtDzT7NkNwXZdOM=.hash
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\w9WoX4GsFsmGcyAkDes4c7r0JNRL-tcbqHfDmPSyc5o=.hash
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\kM5qs_jq-1hVkYbIMC82DxjAv_BnU_IaJEuIKfeqD_s=.hash
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\OZY77jkl_pUZAFYM4xmYiQwCNfyI7_bo8b5fUODpYyw=.hash
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\ddj1ifBEmE3Z2NDwSOrWImzM2vwWfZnWn0W_nvbpxto=.hash
