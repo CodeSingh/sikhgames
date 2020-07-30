@@ -11,33 +11,55 @@
 }
 else
 {
+    <h1>@gameState.CurrentQuestion.CurrentAnswer</h1>
+    Console.WriteLine(@gameState.CurrentQuestion.Answer);
     @foreach( var letter in hangman.Consonants){
-    <span>@letter</span>    
+
+        <Letter Character=@letter Status="" />
     }
 }
 
 @code {
     private HangmanData hangman;
 
+    public GameState gameState;
+
+    public class GameState{
+
+        public Question CurrentQuestion{get;set;}
+        public int Score{get;set;} = 0;
+        public List<Question> AnsweredQuestions{get;set;}
+    }
+
     public class Question
     {
         public string Answer { get; set; }
-
+        public string CurrentAnswer{get;set;}
         public string[] Tags { get; set; }
-
         public string[] Clues { get; set; }
     }
 
     protected override async Task OnInitializedAsync()
     {
         hangman = await Http.GetFromJsonAsync<HangmanData>("sample-data/hangman.json");
+        gameState = new GameState();
+        var random = new Random();
+        int index = random.Next(hangman.Questions.Count);
+        gameState.CurrentQuestion = hangman.Questions[index];
+
+        gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.Answer;
+
+        foreach (var item in hangman.Consonants)
+        {
+            gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.CurrentAnswer.Replace(item, '_');
+        }
     }
 
     public class HangmanData
     {
         public string Consonants { get; set; }
         public string Vowels { get; set; }
-        public Question[] Questions {get;set;}
+        public List<Question> Questions {get;set;}
     }
 
 
