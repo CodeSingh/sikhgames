@@ -1,12 +1,15 @@
 ﻿
-<button class="btn-lg btn-primary @Status">@Character</button>
+<button class="btn-lg btn-primary @Status" @onclick="@(() => OnClick.InvokeAsync(@Character.ToString()))">@Character</button>
 
 
 @code {
     // Demonstrates how a parent component can supply parameters
     [Parameter]
-    public char Character { get; set; }
+    public string Character { get; set; }
     
     [Parameter]
     public string Status { get; set; }
+
+    [Parameter] 
+    public EventCallback<string> OnClick { get; set; }
 }

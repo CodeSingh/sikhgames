@@ -1,5 +1,41 @@
 ﻿{
-  "consonants": "ੳਅੲਸਹਕਖਗਘਙਚਛਜਝਞਟਠਡਢਣਤਥਦਧਨਪਫਬਭਮਯਰਲਵੜ",
+  "consonants": [
+                {"letter":"ੳ", "status": ""}
+                , {"letter":"ਅ", "status": ""}
+                , {"letter":"ੲ", "status": ""}
+                , {"letter":"ਸ", "status": ""}
+                , {"letter":"ਹ", "status": ""}
+                , {"letter":"ਕ", "status": ""}
+                , {"letter":"ਖ", "status": ""}
+                , {"letter":"ਗ", "status": ""}
+                , {"letter":"ਘ", "status": ""}
+                , {"letter":"ਙ", "status": ""}
+                , {"letter":"ਚ", "status": ""}
+                , {"letter":"ਛ", "status": ""}
+                , {"letter":"ਜ", "status": ""}
+                , {"letter":"ਝ", "status": ""}
+                , {"letter":"ਞ", "status": ""}
+                , {"letter":"ਟ", "status": ""}
+                , {"letter":"ਠ", "status": ""}
+                , {"letter":"ਡ", "status": ""}
+                , {"letter":"ਢ", "status": ""}
+                , {"letter":"ਣ", "status": ""}
+                , {"letter":"ਤ", "status": ""}
+                , {"letter":"ਥ", "status": ""}
+                , {"letter":"ਦ", "status": ""}
+                , {"letter":"ਧ", "status": ""}
+                , {"letter":"ਨ", "status": ""}
+                , {"letter":"ਪ", "status": ""}
+                , {"letter":"ਫ", "status": ""}
+                , {"letter":"ਬ", "status": ""}
+                , {"letter":"ਭ", "status": ""}
+                , {"letter":"ਮ", "status": ""}
+                , {"letter":"ਯ", "status": ""}
+                , {"letter":"ਰ", "status": ""}
+                , {"letter":"ਲ", "status": ""}
+                , {"letter":"ਵ", "status": ""}
+                , {"letter":"ੜ", "status": ""}
+              ],
   "vowels": "ਾ,ਿ,ੀ,ੁ,ੂ,ੇ,ੈ,ੋ,ੌ,ੰ,ਂ,ੱ.",
   "questions":[
   {

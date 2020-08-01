@@ -11,21 +11,39 @@
 }
 else
 {
+    <p class="text-@gameState.CurrentQuestion.Status.Style">@gameState.CurrentQuestion.Status.Text</p>
     <h1>@gameState.CurrentQuestion.CurrentAnswer</h1>
     Console.WriteLine(@gameState.CurrentQuestion.Answer);
-    @foreach( var letter in hangman.Consonants){
+    @foreach( var letterButton in hangman.Consonants){
 
-        <Letter Character=@letter Status="" />
+        <Letter Character=@letterButton.Letter Status=@letterButton.Status OnClick="@LetterClick" />
     }
+
+    @if (gameState.CurrentQuestion.LettersUsed == null || gameState.CurrentQuestion.LettersUsed.Count == 0){
+        <h2>Choose a letter</h2>
+    }
+    else{
+        <h2>@(string.Join(", ", gameState.CurrentQuestion.LettersUsed))</h2>
+    }
+    
 }
 
 @code {
+    private const string STATUS_TEXT_IN_PLAY = "In play";
+    private const string STATUS_TEXT_FINISHED_FAILED = "Finished: Sorry you didn't get it right. The answer is {0}";
+    private const string STATUS_TEXT_FINISHED_SUCCESS = "Finished: Congratulations you got it right. The answer is {0}";
+
+    private const string STATUS_STYLE_IN_PLAY = "warning";
+    private const string STATUS_STYLE_FINISHED_FAILED = "danger";
+    private const string STATUS_STYLE_FINISHED_SUCCESS = "success";
+
+    private const string HANGMAN_DATA_FILE = "sample-data/hangman.json";
+
     private HangmanData hangman;
 
     public GameState gameState;
 
     public class GameState{
-
         public Question CurrentQuestion{get;set;}
         public int Score{get;set;} = 0;
         public List<Question> AnsweredQuestions{get;set;}
@@ -37,30 +55,68 @@ else
         public string CurrentAnswer{get;set;}
         public string[] Tags { get; set; }
         public string[] Clues { get; set; }
+        public List<string> LettersUsed {get;set;}
+        public Status Status{get;set;}
+        public int RemainingChances {get;set;} = 13;
     }
 
-    protected override async Task OnInitializedAsync()
-    {
-        hangman = await Http.GetFromJsonAsync<HangmanData>("sample-data/hangman.json");
-        gameState = new GameState();
-        var random = new Random();
-        int index = random.Next(hangman.Questions.Count);
-        gameState.CurrentQuestion = hangman.Questions[index];
+    public class Status{
 
-        gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.Answer;
-
-        foreach (var item in hangman.Consonants)
-        {
-            gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.CurrentAnswer.Replace(item, '_');
-        }
+        public string Style{get;set;}
+        public string Text{get;set;}
     }
 
     public class HangmanData
     {
-        public string Consonants { get; set; }
+        public List<LetterButton> Consonants { get; set; }
         public string Vowels { get; set; }
         public List<Question> Questions {get;set;}
     }
 
+    public class LetterButton{
+        public string Letter {get;set;}
+        public string Status {get;set;}
+    }
 
+    protected override async Task OnInitializedAsync()
+    {
+        hangman = await Http.GetFromJsonAsync<HangmanData>(HANGMAN_DATA_FILE);
+        gameState = new GameState();
+        var random = new Random();
+        int index = random.Next(hangman.Questions.Count);
+        gameState.CurrentQuestion = hangman.Questions[index];
+        gameState.CurrentQuestion.LettersUsed = new List<string>();
+        gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.Answer;
+
+        gameState.CurrentQuestion.Status = new Status(){Text=STATUS_TEXT_IN_PLAY, Style=STATUS_STYLE_IN_PLAY};
+
+        foreach (var item in hangman.Consonants)
+        {
+            gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.CurrentAnswer.Replace(item.Letter, "_");
+            //item.Status = "disabled";
+        }
+    }
+    private void LetterClick(string letter)
+    {
+        if(!gameState.CurrentQuestion.LettersUsed.Contains(letter))
+            gameState.CurrentQuestion.LettersUsed.Add(letter);
+        
+        gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.Answer;
+        
+        foreach (var item in hangman.Consonants)
+        {
+            if(!gameState.CurrentQuestion.LettersUsed.Contains(item.Letter))
+                gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.CurrentAnswer.Replace(item.Letter, "_");
+        }
+
+        if(gameState.CurrentQuestion.CurrentAnswer == gameState.CurrentQuestion.Answer){
+            gameState.CurrentQuestion.Status.Style = STATUS_STYLE_FINISHED_SUCCESS;
+            gameState.CurrentQuestion.Status.Text = String.Format(STATUS_TEXT_FINISHED_SUCCESS, gameState.CurrentQuestion.Answer);
+        }
+        else if(gameState.CurrentQuestion.RemainingChances == 0){
+            gameState.CurrentQuestion.Status.Style = STATUS_STYLE_FINISHED_FAILED;
+            gameState.CurrentQuestion.Status.Text = String.Format(STATUS_TEXT_FINISHED_FAILED, gameState.CurrentQuestion.Answer);    
+        }
+        gameState.CurrentQuestion.RemainingChances --;
+    }
 }

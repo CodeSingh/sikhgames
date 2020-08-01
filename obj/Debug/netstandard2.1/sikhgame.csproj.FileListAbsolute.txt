@@ -365,8 +365,8 @@ C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\RazorDeclaratio
 C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\RazorDeclaration\Shared\Letter.razor.g.cs
 C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\Razor\Pages\Hangman.razor.g.cs
 C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\Razor\Shared\Letter.razor.g.cs
-C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\46JAafHA54atWA9xfbXiQHsgTDuQFP81cTsZJ4z7AfM=.hash
-C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\dcbGNZTRQvzsvyYdO7Wm2_Fkld7KRFoPU9RBa9ay4u8=.hash
-C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\XmTPJE-n_dWu8NGANWBZ67P1jTvdveVWic46yPhgFnY=.hash
-C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\ULFoAhPgCubkySheoLOwc5v9RpgH7rPAMgcSznjzLCU=.hash
-C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\-AjzKhJx67IxuT_WnnMoRpI-JZPV8zQglrZoWqM8emg=.hash
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\BusMXHPAP3knIgPH4jb5Vd2sSUzp9eQRXG_NsunFw3g=.hash
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\6c_iLsQRWutBvsJAxVy1QhdIJnvV-cvScP-Sv6uIcIQ=.hash
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\5nvuIR2BymNOLaWLWzYl32oUSjxOlxxqvKEXYpI_Y4A=.hash
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\jK6YRPBva-x6qm4SK9jSI39QZf3qAvYUevQ7os5OpdA=.hash
+C:\Users\sony\Documents\blazor\sikhgame\obj\Debug\netstandard2.1\integrity\hEjMHaddAgp2XQAKkPluc79fHyXxdZbbxgmlCchXz1Q=.hash
