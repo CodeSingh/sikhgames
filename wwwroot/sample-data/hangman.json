@@ -35,18 +35,77 @@
                 , {"letter":"ਲ", "status": ""}
                 , {"letter":"ਵ", "status": ""}
                 , {"letter":"ੜ", "status": ""}
+                , {"letter":"ਸ਼", "status": ""}
+                , {"letter":"ਖ਼", "status": ""}
+                , {"letter":"ਗ਼", "status": ""}
+                , {"letter":"ਜ਼", "status": ""}
+                , {"letter":"ਫ਼", "status": ""}
+                , {"letter":"ਲ਼", "status": ""}
               ],
-  "vowels": "ਾ,ਿ,ੀ,ੁ,ੂ,ੇ,ੈ,ੋ,ੌ,ੰ,ਂ,ੱ.",
+
+  "vowels": ["ਾ","ੀ","ਿ","ੁ","ੂ","ੇ","ੈ","ੋ","ੌ","ੰ","ਂ","ੱ.","ੱ"],
   "questions":[
   {
-    "answer": "ੳਅੲਸੀ",
-    "tags": ["place", "historical"],
+    "answer": "ਬਾਬਾ ਫੱਤੇ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
     "clues": ["Test 1"]
   },
   {
-    "answer": "ਹਕਖਗਘਿ",
-    "tags": ["place", "historical"],
+    "answer": "ਬਾਬਾ ਅਜੀਤ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਬਾਬਾ ਜ਼ੋਰਾਵਰ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਬਾਬਾ ਜੁਝਾਰ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਸ਼ਹੀਦ ਬਾਬਾ ਦੀਪ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਸ੍ਰੀ ਹਰਿਮੰਦਰ ਸਾਹਿਬ",
+    "tags": ["place"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਸ੍ਰੀ ਅਕਾਲ ਤਖ਼ਤ",
+    "tags": ["place"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਤਖ਼ਤ ਸ੍ਰੀ ਪਟਨਾ ਸਾਹਿਬ",
+    "tags": ["place"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਤਖ਼ਤ ਸ੍ਰੀ ਕੇਸਗੜ੍ਹ ਸਾਹਿਬ",
+    "tags": ["place"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਤਖ਼ਤ ਸ੍ਰੀ ਹਜ਼ੂਰ ਸਾਹਿਬ",
+    "tags": ["place"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਤਖ਼ਤ ਸ੍ਰੀ ਦਮਦਮਾ ਸਾਹਿਬ",
+    "tags": ["place"],
     "clues": ["Test 1"]
   }
+
+
 ]
 }
