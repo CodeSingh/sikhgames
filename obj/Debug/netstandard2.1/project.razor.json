@@ -651,6 +651,55 @@
       },
       {
         "Kind": "Components.Component",
+        "Name": "sikhgame.Shared.TagGroup",
+        "AssemblyName": "sikhgame",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TagGroup",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "sikhgame.Shared.TagGroup"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "sikhgame.Shared.TagGroup",
+        "AssemblyName": "sikhgame",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "sikhgame.Shared.TagGroup",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "sikhgame.Shared.TagGroup",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components",
         "Documentation": "\n            <summary>\n            A component that provides a cascading value to all descendant components.\n            </summary>\n        ",
@@ -16699,6 +16748,11 @@
   },
   "RootNamespace": "sikhgame",
   "Documents": [
+    {
+      "FilePath": "c:\\Users\\sony\\Documents\\blazor\\sikhgame\\Shared\\TagGroup.razor",
+      "TargetPath": "Shared\\TagGroup.razor",
+      "FileKind": "component"
+    },
     {
       "FilePath": "c:\\Users\\sony\\Documents\\blazor\\sikhgame\\Shared\\SurveyPrompt.razor",
       "TargetPath": "Shared\\SurveyPrompt.razor",

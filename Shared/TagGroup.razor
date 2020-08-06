@@ -1,0 +1,12 @@
+﻿<div class="tags">
+@foreach (var item in Tags)
+{
+    <span class="badge-bg badge-pill badge-warning">@item</span>
+}
+</div>
+@code {
+    // Demonstrates how a parent component can supply parameters
+    [Parameter]
+    public string[] Tags { get; set; }
+
+}

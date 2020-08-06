@@ -13,6 +13,7 @@ else
 {
     <p class="text-@gameState.CurrentQuestion.Status.Style">@gameState.CurrentQuestion.Status.Text</p>
     <h1 class="text-@gameState.CurrentQuestion.Status.Style">@gameState.CurrentQuestion.CurrentAnswer</h1>
+    <TagGroup Tags=@gameState.CurrentQuestion.Tags />
     @if( gameState.CurrentQuestion.Status.Text != STATUS_TEXT_IN_PLAY){
         <button class="btn btn-primary" @onclick="OnNewQuestionClick">Next Hangman</button>
     }
@@ -116,10 +117,10 @@ else
         }
 
         // To make the layout better remove dashes before vowels
-        foreach (var item in hangman.Vowels)
-        {
-            //gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.CurrentAnswer.Replace(PLACE_HOLDER + item, item);
-        }
+        //foreach (var item in hangman.Vowels)
+        //{
+            gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.CurrentAnswer.Replace(PLACE_HOLDER + "ਿ","ਿ" + PLACE_HOLDER);
+        //}
     }
 
     private int CalculateScore(){
@@ -133,6 +134,9 @@ else
 
     private void LetterClick(string letter)
     {
+        if(!gameState.CurrentQuestion.Answer.Contains(letter) && !gameState.CurrentQuestion.LettersUsed.Contains(letter))
+            gameState.CurrentQuestion.RemainingChances--;
+
         if(!gameState.CurrentQuestion.LettersUsed.Contains(letter))
             gameState.CurrentQuestion.LettersUsed.Add(letter);
         
@@ -145,13 +149,10 @@ else
         }
 
         // To make the layout better remove dashes before vowels
-        foreach (var item in hangman.Vowels)
-        {
-            //gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.CurrentAnswer.Replace(PLACE_HOLDER + item, item);
-        }
-
-        if(!gameState.CurrentQuestion.Answer.Contains(letter))
-            gameState.CurrentQuestion.RemainingChances--;
+//        foreach (var item in gameState.CurrentQuestion.CurrentAnswer)
+//        {
+            gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.CurrentAnswer.Replace(PLACE_HOLDER + "ਿ","ਿ" + PLACE_HOLDER);
+//        }
 
         if(gameState.CurrentQuestion.CurrentAnswer == gameState.CurrentQuestion.Answer){
             gameState.CurrentQuestion.Status.Style = STATUS_STYLE_FINISHED_SUCCESS;
