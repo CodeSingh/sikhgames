@@ -73,7 +73,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-DBh8P142EXk37n0N1K+dBvEPM928fq1usFEziPtwIr4=",
+      "hash": "sha256-uKp\/6QUoRaFS92vAXYFjtglTlpvnpH6yscEEk3lSoOs=",
       "url": "_framework\/_bin\/sikhgame.dll"
     },
     {
@@ -281,7 +281,7 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-lCpgZda\/2+1uwZtoaiVija7EnzQ1SmKf\/THcZaZn6WU=",
+      "hash": "sha256-dymbtNlKd5nUiPru+uupbIg11YoeYCLJPsBe01ZjKzw=",
       "url": "_framework\/_bin\/sikhgame.pdb"
     },
     {
@@ -301,9 +301,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-85YkkRbTGVC6ZRwShti2jM6HIIzrMDWPdXfn9D\/9gfY=",
+      "hash": "sha256-EQfemsN\/42Y6lCX6mEh6t4xhqZQ1s5rWNBkDIQ6JBIo=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "w67wnqx1"
+  "version": "cNDM64TP"
 };

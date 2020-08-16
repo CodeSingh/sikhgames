@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\DBh8P142EXk37n0N1K_dBvEPM928fq1usFEziPtwIr4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\uKp-6QUoRaFS92vAXYFjtglTlpvnpH6yscEEk3lSoOs=.hash",
       "Source": "C:\\Users\\sony\\Documents\\blazor\\sikhgame\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\sikhgame.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/sikhgame.dll.br"
     },
@@ -261,7 +261,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\lCpgZda-2_1uwZtoaiVija7EnzQ1SmKf-THcZaZn6WU=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\dymbtNlKd5nUiPru_uupbIg11YoeYCLJPsBe01ZjKzw=.hash",
       "Source": "C:\\Users\\sony\\Documents\\blazor\\sikhgame\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\sikhgame.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/sikhgame.pdb.br"
     },
@@ -286,12 +286,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\85YkkRbTGVC6ZRwShti2jM6HIIzrMDWPdXfn9D-9gfY=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\EQfemsN-42Y6lCX6mEh6t4xhqZQ1s5rWNBkDIQ6JBIo=.hash",
       "Source": "C:\\Users\\sony\\Documents\\blazor\\sikhgame\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\P_JwG--YNUYfVbTcIJpgaRLuChyd5g2LOvHQCVh2xiM=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\IthmEWrjKtA0QsOC0fqhTevu4E1v12JYenYODQKwKv0=.hash",
       "Source": "C:\\Users\\sony\\Documents\\blazor\\sikhgame\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.br"
     }
