@@ -104,8 +104,42 @@
     "answer": "ਤਖ਼ਤ ਸ੍ਰੀ ਦਮਦਮਾ ਸਾਹਿਬ",
     "tags": ["place"],
     "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਹੱਰੀ ਸਿੰਘ ਨੱਲਵਾ",
+    "tags": ["person"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਕਿਰਪਾਨ",
+    "tags": ["object"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਕੇਸ",
+    "tags": ["body part"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਕਛੈਰਾ",
+    "tags": ["clothing"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਕੜਾ",
+    "tags": ["object"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਕੰਘਾ",
+    "tags": ["object"],
+    "clues": ["Test 1"]
+  },
+  {
+    "answer": "ਭਾੲੀ੍ ਤਾਰੂ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"]
   }
-
 
 ]
 }
