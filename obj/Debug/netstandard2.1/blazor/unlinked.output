@@ -1,4 +1,4 @@
-obj\Debug\netstandard2.1\blazor\unlinked\sikhgame.dll
+obj\Debug\netstandard2.1\blazor\unlinked\sikhgames.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Net.Http.Json.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Buffers.dll
 obj\Debug\netstandard2.1\blazor\unlinked\mscorlib.dll
@@ -50,4 +50,4 @@ obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Logging.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Options.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.JSInterop.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.JSInterop.WebAssembly.dll
-obj\Debug\netstandard2.1\blazor\unlinked\sikhgame.pdb
+obj\Debug\netstandard2.1\blazor\unlinked\sikhgames.pdb

@@ -1643,11 +1643,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sony\\Documents\\blazor\\sikhgame\\sikhgame.csproj",
-      "projectName": "sikhgame",
-      "projectPath": "C:\\Users\\sony\\Documents\\blazor\\sikhgame\\sikhgame.csproj",
+      "projectUniqueName": "C:\\Users\\sony\\Documents\\blazor\\sikhgames\\sikhgames.csproj",
+      "projectName": "sikhgames",
+      "projectPath": "C:\\Users\\sony\\Documents\\blazor\\sikhgames\\sikhgames.csproj",
       "packagesPath": "C:\\Users\\sony\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sony\\Documents\\blazor\\sikhgame\\obj\\",
+      "outputPath": "C:\\Users\\sony\\Documents\\blazor\\sikhgames\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

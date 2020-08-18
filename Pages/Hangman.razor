@@ -15,7 +15,8 @@ else
     <h1 class="text-@gameState.CurrentQuestion.Status.Style">@gameState.CurrentQuestion.CurrentAnswer</h1>
     <TagGroup Tags=@gameState.CurrentQuestion.Tags />
     @if( gameState.CurrentQuestion.Status.Text != STATUS_TEXT_IN_PLAY){
-        <button class="btn btn-primary" @onclick="OnNewQuestionClick">Next Hangman</button>
+        <button class="btn btn-primary" @onclick="OnNewQuestionClick">Next Hangman</button><br />
+        <a target="_blank" href="@gameState.CurrentQuestion.InfoLink">More Info</a>
     }
     else{
         @foreach( var letterButton in hangman.Consonants){
@@ -65,6 +66,8 @@ else
         public List<string> LettersUsed {get;set;}
         public Status Status{get;set;}
         public int RemainingChances {get;set;} = 13;
+
+        public string InfoLink {get;set;}
     }
 
     public class Status{

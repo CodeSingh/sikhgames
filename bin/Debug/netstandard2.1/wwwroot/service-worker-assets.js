@@ -57,7 +57,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-UdWtL0uZqi8yI4o2Ty2Rn0ZiUSiU\/ZF7vl\/Ox2t0tRQ=",
+      "hash": "sha256-R1hSY3\/GqVO82OB9UCfzEQAkvgTCnI7vsZKkDbofno0=",
       "url": "index.html"
     },
     {
@@ -65,7 +65,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-D5Uc89qwYtTwIekmmFLiBki6uX3ySHhX6fUhCj6YfbE=",
+      "hash": "sha256-NWesECeWF0fTF8scctOAZg9ugZx1GrEOQRumSen8ZG0=",
       "url": "sample-data\/hangman.json"
     },
     {
@@ -73,8 +73,8 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-CEv08jNAo68S61ZbVv10TnxEQ\/4EZCGlXg3ZXNgXNh4=",
-      "url": "_framework\/_bin\/sikhgame.dll"
+      "hash": "sha256-Kv8Ujv933W3Zp4MbNL6LHb1ynOHXTF42iC\/fJVnneDg=",
+      "url": "_framework\/_bin\/sikhgames.dll"
     },
     {
       "hash": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
@@ -281,8 +281,8 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-LRdIPLTxr63emx0rWMZfvSvN88crPVoez76bniPqtsQ=",
-      "url": "_framework\/_bin\/sikhgame.pdb"
+      "hash": "sha256-TG6AHZP4FlaP3AUmv+WfbzFf7Lm7KjLPFDaQRZm09pc=",
+      "url": "_framework\/_bin\/sikhgames.pdb"
     },
     {
       "hash": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",
@@ -301,9 +301,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-ylUMpgK0v7q4mqFJih76M4SdXcOTXR+v211rf5OnJSc=",
+      "hash": "sha256-WP1zR+F56ZMd11gTK2eXhJDpwh2lkH0HuvhkKKfSa8o=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "ze0ncL7c"
+  "version": "fkKyeTM8"
 };
