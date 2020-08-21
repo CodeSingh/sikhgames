@@ -158,7 +158,24 @@
     "tags": ["person"],
     "clues": ["Test 1"],
     "infolink": "https://www.sikhiwiki.org/index.php/Bhai_Taru_Singh"
+  },
+  {
+    "answer": "ਭਾਈ ਮਤੀ ਦਾਸ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Bhai_Mati_Das"
+  },
+  {
+    "answer": "ਭਾਈ ਸਤੀ ਦਾਸ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Bhai_Sati_Das"
+  },
+  {
+    "answer": "ਭਾਈ ਦਿਆਲਾ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Bhai_Dayal_Das"
   }
-
 ]
 }
