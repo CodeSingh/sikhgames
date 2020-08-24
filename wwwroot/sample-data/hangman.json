@@ -176,6 +176,12 @@
     "tags": ["person"],
     "clues": ["Test 1"],
     "infolink": "https://www.sikhiwiki.org/index.php/Bhai_Dayal_Das"
+  },
+  {
+    "answer": "ਮਾਤਾ ਭਾਗ ਕੌਰ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Mai_Bhago"
   }
 ]
 }
