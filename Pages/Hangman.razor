@@ -1,9 +1,8 @@
 @page "/hangman"
 @inject HttpClient Http
 
-<h1>Hangman <button class="btn btn-info"><span class="oi oi-question-mark" aria-hidden="true" data-toggle="modal" data-target="#helpHangman"></span></button></h1>
 
-<p>Can you guess the Sikhi related place, person or thing</p>
+
 
 @if (hangman == null)
 {
@@ -11,6 +10,9 @@
 }
 else
 {
+    <h1>Hangman <span class="badge badge-success">Score: @CalculateScore()</span></h1>
+    <p>Can you guess the Sikhi related place, person or thing<br/>
+    Ingore the character '◌' if you see it in the word</p>
     <p class="text-@gameState.CurrentQuestion.Status.Style">@gameState.CurrentQuestion.Status.Text</p>
     <h1 class="text-@gameState.CurrentQuestion.Status.Style">@gameState.CurrentQuestion.CurrentAnswer</h1>
     <TagGroup Tags=@gameState.CurrentQuestion.Tags />
@@ -19,6 +21,7 @@ else
         <a target="_blank" href="@gameState.CurrentQuestion.InfoLink">More Info</a>
     }
     else{
+        <h5>Choose a letter</h5>
         @foreach( var letterButton in hangman.Consonants){
 
             <Letter Character=@letterButton.Letter Status=@letterButton.Status OnClick="@LetterClick" />
@@ -26,17 +29,15 @@ else
     }
 
     @if (gameState.CurrentQuestion.LettersUsed == null || gameState.CurrentQuestion.LettersUsed.Count == 0){
-        <h2>Choose a letter</h2>
+        //
     }
     else{
-        <h2>Choose a letter.</h2>
-        <h2>@(string.Join(", ", gameState.CurrentQuestion.LettersUsed))</h2>
-        <h3>Remaining Chances: @gameState.CurrentQuestion.RemainingChances</h3>
-    }
-    <h3>Your Score: @CalculateScore()</h3>
-    
+
+        <h5>@(string.Join(", ", gameState.CurrentQuestion.LettersUsed))</h5>
+        <h5>Remaining Chances: @gameState.CurrentQuestion.RemainingChances</h5>
+    }    
 }
-<Modal></Modal>
+
 
 @code {
     private const string STATUS_TEXT_IN_PLAY = "In play";

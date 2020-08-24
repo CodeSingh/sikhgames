@@ -107,39 +107,6 @@
         }
       },
       {
-        "HashCode": 862548132,
-        "Kind": "Components.Component",
-        "Name": "sikhgames.Pages.Hangman",
-        "AssemblyName": "sikhgames",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Hangman"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "sikhgames.Pages.Hangman"
-        }
-      },
-      {
-        "HashCode": -45857879,
-        "Kind": "Components.Component",
-        "Name": "sikhgames.Pages.Hangman",
-        "AssemblyName": "sikhgames",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "sikhgames.Pages.Hangman"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "sikhgames.Pages.Hangman",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -865925576,
         "Kind": "Components.Component",
         "Name": "sikhgames.Pages.Index",
@@ -169,6 +136,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "sikhgames.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 862548132,
+        "Kind": "Components.Component",
+        "Name": "sikhgames.Pages.Hangman",
+        "AssemblyName": "sikhgames",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Hangman"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "sikhgames.Pages.Hangman"
+        }
+      },
+      {
+        "HashCode": -45857879,
+        "Kind": "Components.Component",
+        "Name": "sikhgames.Pages.Hangman",
+        "AssemblyName": "sikhgames",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "sikhgames.Pages.Hangman"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "sikhgames.Pages.Hangman",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -491,6 +491,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "sikhgames.Shared.TagGroup",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1781913291,
+        "Kind": "Components.Component",
+        "Name": "sikhgames.Shared.Modal",
+        "AssemblyName": "sikhgames",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Modal"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "sikhgames.Shared.Modal"
+        }
+      },
+      {
+        "HashCode": -1516911770,
+        "Kind": "Components.Component",
+        "Name": "sikhgames.Shared.Modal",
+        "AssemblyName": "sikhgames",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "sikhgames.Shared.Modal"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "sikhgames.Shared.Modal",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
