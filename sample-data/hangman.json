@@ -1,0 +1,187 @@
+﻿{
+  "consonants": [
+                {"letter":"ੳ", "status": ""}
+                , {"letter":"ਅ", "status": ""}
+                , {"letter":"ੲ", "status": ""}
+                , {"letter":"ਸ", "status": ""}
+                , {"letter":"ਹ", "status": ""}
+                , {"letter":"ਕ", "status": ""}
+                , {"letter":"ਖ", "status": ""}
+                , {"letter":"ਗ", "status": ""}
+                , {"letter":"ਘ", "status": ""}
+                , {"letter":"ਙ", "status": ""}
+                , {"letter":"ਚ", "status": ""}
+                , {"letter":"ਛ", "status": ""}
+                , {"letter":"ਜ", "status": ""}
+                , {"letter":"ਝ", "status": ""}
+                , {"letter":"ਞ", "status": ""}
+                , {"letter":"ਟ", "status": ""}
+                , {"letter":"ਠ", "status": ""}
+                , {"letter":"ਡ", "status": ""}
+                , {"letter":"ਢ", "status": ""}
+                , {"letter":"ਣ", "status": ""}
+                , {"letter":"ਤ", "status": ""}
+                , {"letter":"ਥ", "status": ""}
+                , {"letter":"ਦ", "status": ""}
+                , {"letter":"ਧ", "status": ""}
+                , {"letter":"ਨ", "status": ""}
+                , {"letter":"ਪ", "status": ""}
+                , {"letter":"ਫ", "status": ""}
+                , {"letter":"ਬ", "status": ""}
+                , {"letter":"ਭ", "status": ""}
+                , {"letter":"ਮ", "status": ""}
+                , {"letter":"ਯ", "status": ""}
+                , {"letter":"ਰ", "status": ""}
+                , {"letter":"ਲ", "status": ""}
+                , {"letter":"ਵ", "status": ""}
+                , {"letter":"ੜ", "status": ""}
+                , {"letter":"ਸ਼", "status": ""}
+                , {"letter":"ਖ਼", "status": ""}
+                , {"letter":"ਗ਼", "status": ""}
+                , {"letter":"ਜ਼", "status": ""}
+                , {"letter":"ਫ਼", "status": ""}
+                , {"letter":"ਲ਼", "status": ""}
+              ],
+
+  "vowels": ["ਾ","ੀ","ਿ","ੁ","ੂ","ੇ","ੈ","ੋ","ੌ","ੰ","ਂ","ੱ.","ੱ"],
+  "questions":[
+  {
+    "answer": "ਬਾਬਾ ਫੱਤੇ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink" : "https://www.sikhiwiki.org/index.php/Sahibzada_Fateh_Singh" 
+  },
+  {
+    "answer": "ਬਾਬਾ ਅਜੀਤ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Sahibzada_Ajit_Singh"
+  },
+  {
+    "answer": "ਬਾਬਾ ਜ਼ੋਰਾਵਰ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Sahibzada_Zorawar_Singh"
+  },
+  {
+    "answer": "ਬਾਬਾ ਜੁਝਾਰ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Sahibzada_Jujhar_Singh"
+  },
+  {
+    "answer": "ਬਾਬਾ ਦੀਪ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Baba_Deep_Singh"
+  },
+  {
+    "answer": "ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Banda_Singh_Bahadur"
+  },
+  {
+    "answer": "ਸ੍ਰੀ ਹਰਿਮੰਦਰ ਸਾਹਿਬ",
+    "tags": ["place"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Golden_Temple"
+  },
+  {
+    "answer": "ਸ੍ਰੀ ਅਕਾਲ ਤਖ਼ਤ",
+    "tags": ["place"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Shri_Akal_Takhat"
+  },
+  {
+    "answer": "ਤਖ਼ਤ ਸ੍ਰੀ ਪਟਨਾ ਸਾਹਿਬ",
+    "tags": ["place"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Takhat_Sachkhand_Sri_Patna_Sahib"
+  },
+  {
+    "answer": "ਤਖ਼ਤ ਸ੍ਰੀ ਕੇਸਗੜ੍ਹ ਸਾਹਿਬ",
+    "tags": ["place"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Gurdwara_Keshgarh_Sahib"
+  },
+  {
+    "answer": "ਤਖ਼ਤ ਸ੍ਰੀ ਹਜ਼ੂਰ ਸਾਹਿਬ",
+    "tags": ["place"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Takhat_Sachkhand_Sri_Hazoor_Sahib"
+  },
+  {
+    "answer": "ਤਖ਼ਤ ਸ੍ਰੀ ਦਮਦਮਾ ਸਾਹਿਬ",
+    "tags": ["place"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Takhat_Damdama_Sahib"
+  },
+  {
+    "answer": "ਹੱਰੀ ਸਿੰਘ ਨੱਲਵਾ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Hari_Singh_Nalwa"
+  },
+  {
+    "answer": "ਕਿਰਪਾਨ",
+    "tags": ["object"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Kirpan"
+  },
+  {
+    "answer": "ਕੇਸ",
+    "tags": ["body part"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Kesh"
+  },
+  {
+    "answer": "ਕਛੈਰਾ",
+    "tags": ["clothing"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Kachera"
+  },
+  {
+    "answer": "ਕੜਾ",
+    "tags": ["object"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Kara"
+  },
+  {
+    "answer": "ਕੰਘਾ",
+    "tags": ["object"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Kanga"
+  },
+  {
+    "answer": "ਭਾਈ ਤਾਰੂ ਸਿੰਘ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Bhai_Taru_Singh"
+  },
+  {
+    "answer": "ਭਾਈ ਮਤੀ ਦਾਸ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Bhai_Mati_Das"
+  },
+  {
+    "answer": "ਭਾਈ ਸਤੀ ਦਾਸ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Bhai_Sati_Das"
+  },
+  {
+    "answer": "ਭਾਈ ਦਿਆਲਾ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Bhai_Dayal_Das"
+  },
+  {
+    "answer": "ਮਾਤਾ ਭਾਗ ਕੌਰ ਜੀ",
+    "tags": ["person"],
+    "clues": ["Test 1"],
+    "infolink": "https://www.sikhiwiki.org/index.php/Mai_Bhago"
+  }
+]
+}
