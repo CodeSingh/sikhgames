@@ -1,0 +1,180 @@
+@page "/emojiwords"
+@inject HttpClient Http
+
+
+@*
+
+@if (emojis == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <h1>Emoji Words <span class="badge badge-success">Score: @CalculateScore()</span></h1>
+    <p>Pick the correct word relating to the emoji icon</p>
+    <p class="text-@gameState.CurrentQuestion.Status.Style">@gameState.CurrentQuestion.Status.Text</p>
+    <h1 class="text-@gameState.CurrentQuestion.Status.Style">@gameState.CurrentQuestion.CurrentAnswer</h1>
+    <TagGroup Tags=@gameState.CurrentQuestion.Tags />
+    @if( gameState.CurrentQuestion.Status.Text != STATUS_TEXT_IN_PLAY){
+        <button class="btn btn-primary" @onclick="OnNewQuestionClick">Next Hangman</button><br />
+        <a target="_blank" href="@gameState.CurrentQuestion.InfoLink">More Info</a>
+    }
+    else{
+        <h5>Choose a letter</h5>
+        @foreach( var letterButton in hangman.Consonants){
+
+            <Letter Character=@letterButton.Letter Status=@letterButton.Status OnClick="@LetterClick" />
+        }
+    }
+
+    @if (gameState.CurrentQuestion.LettersUsed == null || gameState.CurrentQuestion.LettersUsed.Count == 0){
+        //
+    }
+    else{
+
+        <h5>@(string.Join(", ", gameState.CurrentQuestion.LettersUsed))</h5>
+        <h5>Remaining Chances: @gameState.CurrentQuestion.RemainingChances</h5>
+    }    
+}
+
+
+@code {
+    private const string STATUS_TEXT_IN_PLAY = "In play";
+    private const string STATUS_TEXT_FINISHED_FAILED = "Finished: Sorry you didn't get it right. The answer is {0}";
+    private const string STATUS_TEXT_FINISHED_SUCCESS = "Finished: Congratulations you got it right. The answer is {0}";
+    private const string PLACE_HOLDER = "x";
+    private const string STATUS_STYLE_IN_PLAY = "warning";
+    private const string STATUS_STYLE_FINISHED_FAILED = "danger";
+    private const string STATUS_STYLE_FINISHED_SUCCESS = "success";
+
+    private const string HANGMAN_DATA_FILE = "sample-data/hangman.json";
+
+    private HangmanData hangman;
+
+    public GameState gameState;
+
+    public class GameState{
+        public Question CurrentQuestion{get;set;}
+        public List<Question> AnsweredQuestions{get;set;}
+    }
+
+    public class Question
+    {
+        public string Answer { get; set; }
+        public string CurrentAnswer{get;set;}
+        public string[] Tags { get; set; }
+        public string[] Clues { get; set; }
+        public List<string> LettersUsed {get;set;}
+        public Status Status{get;set;}
+        public int RemainingChances {get;set;} = 13;
+
+        public string InfoLink {get;set;}
+    }
+
+    public class Status{
+
+        public string Style{get;set;}
+        public string Text{get;set;}
+    }
+
+    public class HangmanData
+    {
+        public List<LetterButton> Consonants { get; set; }
+        public List<string> Vowels { get; set; }
+        public List<Question> Questions {get;set;}
+    }
+
+    public class LetterButton{
+        public string Letter {get;set;}
+        public string Status {get;set;}
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        hangman = await Http.GetFromJsonAsync<HangmanData>(HANGMAN_DATA_FILE);
+        gameState = new GameState();
+
+        gameState.AnsweredQuestions = new List<Question>();
+
+        NewQuestion();
+    }
+
+    private void NewQuestion(){
+        var random = new Random();
+
+        int index = 0;
+
+        // Don't allow the same question twice
+        do
+        {
+            index = random.Next(hangman.Questions.Count);
+            gameState.CurrentQuestion = hangman.Questions[index];
+            gameState.CurrentQuestion.LettersUsed = new List<string>();
+            gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.Answer;
+            gameState.CurrentQuestion.Status = new Status(){Text=STATUS_TEXT_IN_PLAY, Style=STATUS_STYLE_IN_PLAY};
+
+        } while ( gameState.AnsweredQuestions != null && gameState.AnsweredQuestions.Count < hangman.Questions.Count &&
+                gameState.AnsweredQuestions.Where(w => w.Answer == gameState.CurrentQuestion.CurrentAnswer).Any());
+
+        foreach (var item in hangman.Consonants){
+            gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.CurrentAnswer.Replace(item.Letter, PLACE_HOLDER);
+        }
+
+        gameState.CurrentQuestion.CurrentAnswer = FixSihariDisplay(gameState.CurrentQuestion.CurrentAnswer);
+
+    }
+
+    private string FixSihariDisplay(string currentAnswer){
+        Console.WriteLine($"Before: {currentAnswer}");
+
+        string temp = currentAnswer;
+        temp = temp.Replace(PLACE_HOLDER + "ਿ","ਿ" + PLACE_HOLDER).Replace("ਾਿ", "ਾ" + " " + " ਿ");
+        Console.WriteLine($"After: {temp}");
+        return( temp );
+    }
+
+    private int CalculateScore(){
+        if(gameState.AnsweredQuestions == null || gameState.AnsweredQuestions.Count > 0){
+            return gameState.AnsweredQuestions.Sum(c => c.RemainingChances);
+        }
+        else{
+            return 0;
+        }
+    }
+
+    private void LetterClick(string letter)
+    {
+        if(!gameState.CurrentQuestion.Answer.Contains(letter) && !gameState.CurrentQuestion.LettersUsed.Contains(letter))
+            gameState.CurrentQuestion.RemainingChances--;
+
+        if(!gameState.CurrentQuestion.LettersUsed.Contains(letter))
+            gameState.CurrentQuestion.LettersUsed.Add(letter);
+        
+        gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.Answer;
+
+        foreach (var item in hangman.Consonants)
+        {
+            if(!gameState.CurrentQuestion.LettersUsed.Contains(item.Letter))
+                gameState.CurrentQuestion.CurrentAnswer = gameState.CurrentQuestion.CurrentAnswer.Replace(item.Letter, PLACE_HOLDER);           
+        }
+
+        gameState.CurrentQuestion.CurrentAnswer = FixSihariDisplay(gameState.CurrentQuestion.CurrentAnswer);
+
+        if(gameState.CurrentQuestion.CurrentAnswer == gameState.CurrentQuestion.Answer){
+            gameState.CurrentQuestion.Status.Style = STATUS_STYLE_FINISHED_SUCCESS;
+            gameState.CurrentQuestion.Status.Text = String.Format(STATUS_TEXT_FINISHED_SUCCESS, gameState.CurrentQuestion.Answer);
+            gameState.AnsweredQuestions.Add(gameState.CurrentQuestion);
+        }
+        else if(gameState.CurrentQuestion.RemainingChances == 0){
+            gameState.CurrentQuestion.Status.Style = STATUS_STYLE_FINISHED_FAILED;
+            gameState.CurrentQuestion.Status.Text = String.Format(STATUS_TEXT_FINISHED_FAILED, gameState.CurrentQuestion.Answer);  
+            gameState.AnsweredQuestions.Add(gameState.CurrentQuestion);
+        }
+    }
+
+    private void OnNewQuestionClick(MouseEventArgs e)
+    {
+        NewQuestion();
+    }
+}
+*@
